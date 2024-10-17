@@ -1,3 +1,22 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   namespace: robot-shop
+#   name: robot-shop
+# spec:
+#   ingressClassName: azure-application-gateway
+#   rules:
+#     - http:
+#         paths:
+#           - path: /
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: web
+#                 port:
+#                   number: 8080
+
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -6,7 +25,8 @@ metadata:
 spec:
   ingressClassName: azure-application-gateway
   rules:
-    - http:
+    - host: robotshop.kubecloud.in.net
+      http:
         paths:
           - path: /
             pathType: Prefix

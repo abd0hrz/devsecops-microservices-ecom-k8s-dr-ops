@@ -5,3 +5,4 @@ vendor/
 Gopkg.lock
 
 architecture.sh
+commit.sh

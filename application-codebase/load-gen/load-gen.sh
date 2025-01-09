@@ -10,7 +10,8 @@ NUM_CLIENTS=100
 RUN_TIME=0
 
 # HOST where Stan's Robot Shop web UI is running
-HOST="http://localhost:8080"
+# HOST="http://localhost:8080"
+HOST="https://future.ahmadraza.in"
 
 # Error flag
 ERROR=0

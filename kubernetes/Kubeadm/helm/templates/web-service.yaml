@@ -4,6 +4,18 @@ metadata:
   name: web
   labels:
     service: web
+# spec:
+#   ports:
+#   - name: http
+#     port: 8080
+#     targetPort: 8080
+#   selector:
+#     service: web
+#   {{ if .Values.nodeport }}
+#   type: NodePort
+#   {{ else }}
+#   type: LoadBalancer
+#   {{ end }}  
 spec:
   ports:
   - name: http
@@ -11,11 +23,7 @@ spec:
     targetPort: 8080
   selector:
     service: web
-  {{ if .Values.nodeport }}
-  type: NodePort
-  {{ else }}
-  type: LoadBalancer
-  {{ end }}
+  type: ClusterIP
 ---
 {{if .Values.ocCreateRoute}}
 apiVersion: route.openshift.io/v1

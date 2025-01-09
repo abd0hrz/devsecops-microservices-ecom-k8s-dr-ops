@@ -53,9 +53,9 @@ rabbitmq: {}
 
 ratings: {}
 
-redis:
+redis: {}
   # Storage class to use with redis statefulset.
-  storageClassName: redis-storage # standard
+  # storageClassName: redis-storage # standard
 
 shipping: {}
 

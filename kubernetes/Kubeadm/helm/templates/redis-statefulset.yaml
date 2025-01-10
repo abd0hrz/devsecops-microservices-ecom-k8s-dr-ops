@@ -5,6 +5,7 @@ metadata:
   labels:
     service: redis
   name: redis
+
 spec:
   replicas: 1
   selector:
@@ -36,6 +37,9 @@ spec:
             cpu: 100m
             memory: 50Mi
       restartPolicy: Always
+      # Add nodeSelector to target a specific node
+      nodeSelector:
+        kubernetes.io/hostname: <node-name>
       # {{- with .Values.redis.affinity }}
       # affinity:
       #   {{- toYaml . | nindent 8 }}

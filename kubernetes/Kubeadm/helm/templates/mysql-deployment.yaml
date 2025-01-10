@@ -19,7 +19,7 @@ spec:
       {{ end }}
       containers:
       - name: mysql
-        image: noscopev6/rs-mysql-db:1  # {{ .Values.image.repo }}/rs-mysql-db:{{ .Values.image.version }}
+        image: {{ .Values.image.repo }}/rs-mysql-db:{{ .Values.image.version }} # noscopev6/rs-mysql-db:1  # 
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         # added for Istio
         securityContext:

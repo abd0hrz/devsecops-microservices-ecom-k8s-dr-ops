@@ -5,14 +5,15 @@ Use this helm chart to customise your install of Stan's Robot Shop.
 ### Helm v2.x
 
 ```shell
-$ helm install --name robot-shop --namespace robot-shop .
+helm install --name robot-shop --namespace robot-shop .
 ```
 
 ### Helm v3.x
 
 ```bash
-$ kubectl create ns robot-shop
-$ helm install robot-shop --namespace robot-shop .
+kubectl create ns robot-shop
+helm install robot-shop --namespace robot-shop .
+helm install robot-shop --namespace robot-shop --create-namespace .
 ```
 
 ## Images

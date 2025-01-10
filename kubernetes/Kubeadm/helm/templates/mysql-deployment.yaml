@@ -14,17 +14,17 @@ spec:
       labels:
         service: mysql
     spec:
-      {{ if .Values.psp.enabled }}
-      serviceAccountName: robot-shop
-      {{ end }}
+      # {{ if .Values.psp.enabled }}
+      # serviceAccountName: robot-shop
+      # {{ end }}
       containers:
       - name: mysql
-        image: {{ .Values.image.repo }}/rs-mysql-db:{{ .Values.image.version }}
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        image: mysqlrobot:1 # {{ .Values.image.repo }}/rs-mysql-db:{{ .Values.image.version }}
+        # imagePullPolicy: {{ .Values.image.pullPolicy }}
         # added for Istio
-        securityContext:
-          capabilities:
-            add: ["NET_ADMIN"]
+        # securityContext:
+        #   capabilities:
+        #     add: ["NET_ADMIN"]
         ports:
         - containerPort: 3306
         resources:
@@ -35,15 +35,15 @@ spec:
             cpu: 100m
             memory: 700Mi
       restartPolicy: Always
-      {{- with .Values.mysql.affinity }}
-      affinity:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-      {{- with .Values.mysql.nodeSelector }}
-      nodeSelector:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-      {{- with .Values.mysql.tolerations }}
-      tolerations:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
+      # {{- with .Values.mysql.affinity }}
+      # affinity:
+      #   {{- toYaml . | nindent 8 }}
+      # {{- end }}
+      # {{- with .Values.mysql.nodeSelector }}
+      # nodeSelector:
+      #   {{- toYaml . | nindent 8 }}
+      # {{- end }}
+      # {{- with .Values.mysql.tolerations }}
+      # tolerations:
+      #   {{- toYaml . | nindent 8 }}
+      # {{- end }}

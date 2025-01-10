@@ -39,7 +39,7 @@ spec:
       restartPolicy: Always
       # Add nodeSelector to target a specific node
       nodeSelector:
-        kubernetes.io/hostname: <node-name>
+        kubernetes.io/hostname: alpha.us-central1-c.c.project2025-446917.internal
       # {{- with .Values.redis.affinity }}
       # affinity:
       #   {{- toYaml . | nindent 8 }}

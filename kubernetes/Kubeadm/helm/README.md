@@ -14,6 +14,7 @@ helm install --name robot-shop --namespace robot-shop .
 kubectl create ns robot-shop
 helm install robot-shop --namespace robot-shop .
 helm install robot-shop --namespace robot-shop --create-namespace .
+helm upgrade robot-shop --namespace robot-shop .
 ```
 
 ## Images

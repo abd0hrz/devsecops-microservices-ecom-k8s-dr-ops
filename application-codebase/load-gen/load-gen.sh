@@ -4,7 +4,7 @@
 
 # Changing the NUM_CLIENTS environment variable varies the load on the application
 # The bigger the number the more requests, the bigger the load
-NUM_CLIENTS=100
+NUM_CLIENTS=2000
 
 # Time to run with NUM_CLIENTS e.g. 1h
 RUN_TIME=0

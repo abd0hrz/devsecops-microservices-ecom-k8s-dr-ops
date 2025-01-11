@@ -13,8 +13,13 @@ The **Ecom Robot Shop** is a fully functional e-commerce application implemented
 ### AWS Infrastructure
 ![alt text](AWS-EcomAppInfra.png)
 
-### Azure Infrastructure
-![alt text](Azure-EcomAppInfra.png)
+### Azure Infrastructure `Coming Soon`
+<!-- ![alt text](Azure-EcomAppInfra.png) -->
+
+
+### KubeAdm-Setup Infra
+![alt text](Kubeadm-3project-Multimicroservices.png)
+
 
 ## 🛠 **Tech Stack**
 

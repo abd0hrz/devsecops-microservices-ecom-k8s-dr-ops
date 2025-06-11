@@ -31,6 +31,7 @@ The **frontend** is built with **AngularJS**, while backend services use various
 ### KubeAdm-Setup Infra
 ![alt text](Kubeadm-3project-Multimicroservices.png)
 
+---
 
 ## 🛠 **Tech Stack**
 
@@ -62,6 +63,8 @@ The **frontend** is built with **AngularJS**, while backend services use various
 - **Storage:** AWS S3 Buckets, Persistent Volumes (PV) with EBS and Azure Disk
 - **Networking:** Route 53, Cloudflare
 - **Registry:** DockerHub, Elastic Container Registry (ECR)
+
+---
 
 ## 📂 **Project Structure**
 
@@ -124,6 +127,8 @@ The **frontend** is built with **AngularJS**, while backend services use various
 
 - **Helm-Chats:**
   The Helm chart for installing 
+
+---
 
 ## 🚀 **Getting Started**
 

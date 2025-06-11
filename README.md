@@ -1,4 +1,4 @@
-# EKS_AKS_EcomApp_DR-OPS
+# EcomApp DevSecOps Deployment – EKS | AKS | DR-OPS
 
 Welcome to the **Ecom Robot Shop** deployment project! This is a **production-grade, enterprise-level microservices-based e-commerce application** inspired by IBM's **Instana Robot Shop**, deployed using **DevSecOps** best practices for scalable, secure, and reliable production environments. This repository encapsulates the entire lifecycle of the application, from development to deployment, across multiple cloud environments like **AWS EKS**, **Azure AKS**, and **DigitalOcean Kubernetes**.
 
@@ -160,5 +160,3 @@ We welcome contributions! Please follow these steps:
 1. **Fork** the repository.
 2. Create a **new branch** (feature/your-feature).
 3. Submit a **pull request**.
-
-For more visit my blog [docs.ahmadraza.in](https://docs.ahmadraza.in).  

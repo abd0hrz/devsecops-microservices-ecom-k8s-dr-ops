@@ -6,7 +6,18 @@ This application showcases a microservices architecture designed for testing and
 
 ## 🚀 **Overview**
 
-The **Ecom Robot Shop** is a fully functional e-commerce application implemented as microservices. The app includes services for managing products, orders, customers, payments, and more. It is designed to simulate a real-world e-commerce platform with integrated services, including a **frontend** built using **AngularJS** and a **backend** with technologies like **NodeJS**, **Java**, **Python**, **Go**, **PHP**, **Redis**, **RabbitMQ**, and **MongoDB**.
+The **Ecom Robot Shop** simulates a real-world e-commerce platform built with a **microservices architecture**. It includes services for:
+
+- Products
+- Orders
+- Customers
+- Payments
+- Shipping
+- Monitoring
+
+The **frontend** is built with **AngularJS**, while backend services use various technologies: **Node.js**, **Java**, **Python**, **Go**, **PHP**, and databases like **MongoDB**, **MySQL**, **Redis**, and **RabbitMQ**.
+
+---
 
 ## 📊 **Infrastructure Diagrams**
 
@@ -124,7 +135,7 @@ The **Ecom Robot Shop** is a fully functional e-commerce application implemented
 
 ### 2. **Clone the Repository**
 ```bash
-git clone https://github.com/ahmadrazalab/EcomRobotShop.git
+git clone https://github.com/abd0hrz/EcomRobotShop.git
 cd EcomRobotShop
 ```
 
